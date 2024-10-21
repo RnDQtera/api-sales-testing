@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.006.01 Get Setting Approval</name>
+   <name>OBJ.009.25 Get Partner Contact Detail</name>
    <tag></tag>
-   <elementGuidId>1704f4ed-cb50-44f9-a6e9-7e0a0173aba0</elementGuidId>
+   <elementGuidId>021102c1-bd04-4f6c-a4b1-b0c0e974c0e9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -36,14 +36,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>f335d01b-9bad-4ddd-a83a-725054773c06</webElementGuid>
+      <webElementGuid>f80c654f-36ba-40dd-bb2d-54441db92480</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${sales_approval}${endpoint}</restUrl>
+   <restUrl>${customer_partner}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -60,14 +60,14 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.sales_approval</defaultValue>
+      <defaultValue>GlobalVariable.customer_partner</defaultValue>
       <description></description>
       <id>e4dc6ce3-e78c-45c8-a926-d516bc90bf9e</id>
       <masked>false</masked>
-      <name>sales_approval</name>
+      <name>customer_partner</name>
    </variables>
    <variables>
-      <defaultValue>'v1/settings/approval/product'</defaultValue>
+      <defaultValue>'v1/contacts/partners/6716246dcaad3c0e0200bc03'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

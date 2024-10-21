@@ -79,7 +79,7 @@
       <name>sales_approval</name>
    </variables>
    <variables>
-      <defaultValue>'/settings/approval/product'</defaultValue>
+      <defaultValue>'v1/settings/approval/product'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

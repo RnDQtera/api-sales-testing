@@ -67,7 +67,7 @@
       <name>customer_partner</name>
    </variables>
    <variables>
-      <defaultValue>'/customers'</defaultValue>
+      <defaultValue>'v1/customers'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

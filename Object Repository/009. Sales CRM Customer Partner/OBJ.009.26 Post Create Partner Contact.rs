@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.006.01 Get Setting Approval</name>
+   <name>OBJ.009.26 Post Create Partner Contact</name>
    <tag></tag>
-   <elementGuidId>1704f4ed-cb50-44f9-a6e9-7e0a0173aba0</elementGuidId>
+   <elementGuidId>ac3e412d-e338-4669-ab82-aa719edf8bbc</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,8 +20,20 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Ronaldo\&quot;,\n  \&quot;partner\&quot;: \&quot;67162875caad3c0e0200bc40\&quot;,\n  \&quot;email\&quot;: \&quot;siuuuu@mailnesia.com\&quot;,\n  \&quot;position\&quot;: \&quot;PL\&quot;,\n  \&quot;division\&quot;: \&quot;PN\&quot;,\n  \&quot;mobilePhone\&quot;: [\n    \&quot;998838376\&quot;\n  ],\n  \&quot;additionalFields\&quot;: {}\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>2e359a02-4a0d-4b1b-bb50-e88826d0004d</webElementGuid>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -36,14 +48,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>f335d01b-9bad-4ddd-a83a-725054773c06</webElementGuid>
+      <webElementGuid>f80c654f-36ba-40dd-bb2d-54441db92480</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${sales_approval}${endpoint}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${customer_partner}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -60,14 +72,14 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.sales_approval</defaultValue>
+      <defaultValue>GlobalVariable.customer_partner</defaultValue>
       <description></description>
       <id>e4dc6ce3-e78c-45c8-a926-d516bc90bf9e</id>
       <masked>false</masked>
-      <name>sales_approval</name>
+      <name>customer_partner</name>
    </variables>
    <variables>
-      <defaultValue>'v1/settings/approval/product'</defaultValue>
+      <defaultValue>'v1/contacts/partners'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

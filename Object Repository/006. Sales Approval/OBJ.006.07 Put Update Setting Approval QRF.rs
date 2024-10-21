@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.006.01 Get Setting Approval</name>
+   <name>OBJ.006.07 Put Update Setting Approval QRF</name>
    <tag></tag>
-   <elementGuidId>1704f4ed-cb50-44f9-a6e9-7e0a0173aba0</elementGuidId>
+   <elementGuidId>9f54f7bc-e064-48e5-8821-f0f9c5687ac7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,8 +20,20 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;level\&quot; : 2,\n    \&quot;type\&quot; : \&quot;and\&quot;,\n    \&quot;users\&quot; : [\&quot;6707c9c1d4f80878e8569fbd\&quot;],\n    \&quot;qrfMargin\&quot;: 2,\n    \&quot;skipLowerLevels\&quot; : true\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>f02040cb-b390-4101-85ce-19c5ed33bb47</webElementGuid>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -42,7 +54,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>GET</restRequestMethod>
+   <restRequestMethod>PUT</restRequestMethod>
    <restUrl>${sales_approval}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -67,7 +79,7 @@
       <name>sales_approval</name>
    </variables>
    <variables>
-      <defaultValue>'v1/settings/approval/product'</defaultValue>
+      <defaultValue>'v1/settings/approval/qrf'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>
