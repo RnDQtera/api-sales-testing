@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.006.07 Put Update Setting Approval QRF</name>
+   <name>OBJ.004.05 Get Settings User Dropdown</name>
    <tag></tag>
-   <elementGuidId>9f54f7bc-e064-48e5-8821-f0f9c5687ac7</elementGuidId>
+   <elementGuidId>92508ade-25d9-4a29-b6c9-15dad242fa9e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -20,20 +20,8 @@
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;level\&quot; : 1,\n    \&quot;type\&quot; : \&quot;and\&quot;,\n    \&quot;users\&quot; : [\&quot;6707c9c1d4f80878e8569fbd\&quot;],\n    \&quot;qrfMargin\&quot;: 2,\n    \&quot;skipLowerLevels\&quot; : true\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>f02040cb-b390-4101-85ce-19c5ed33bb47</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -48,14 +36,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>f335d01b-9bad-4ddd-a83a-725054773c06</webElementGuid>
+      <webElementGuid>f80c654f-36ba-40dd-bb2d-54441db92480</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://dev-sales-api-approval.asdf.id/v1/settings/approval/qrf</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${settings_user}${endpoint}?isSalesAssigned=true</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -72,14 +60,14 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.sales_approval</defaultValue>
+      <defaultValue>GlobalVariable.settings_user</defaultValue>
       <description></description>
       <id>e4dc6ce3-e78c-45c8-a926-d516bc90bf9e</id>
       <masked>false</masked>
-      <name>sales_approval</name>
+      <name>settings_user</name>
    </variables>
    <variables>
-      <defaultValue>'v1/settings/approval/qrf'</defaultValue>
+      <defaultValue>'v1/settings/users/dropdown'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

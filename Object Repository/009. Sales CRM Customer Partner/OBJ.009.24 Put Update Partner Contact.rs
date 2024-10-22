@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Messi\&quot;,\n  \&quot;partner\&quot;: \&quot;6716246dcaad3c0e0200bc03\&quot;,\n  \&quot;email\&quot;: \&quot;goat@best.com\&quot;,\n  \&quot;position\&quot;: \&quot;GOAT\&quot;,\n  \&quot;division\&quot;: \&quot;GOAT\&quot;,\n  \&quot;mobilePhone\&quot;: [\n    \&quot;5047\&quot;\n  ],\n  \&quot;additionalFields\&quot;: {}\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;Daffa\&quot;,\n  \&quot;partner\&quot;: \&quot;67162875caad3c0e0200bc40\&quot;,\n  \&quot;email\&quot;: \&quot;daffa@mail.com\&quot;,\n  \&quot;position\&quot;: \&quot;IT\&quot;,\n  \&quot;division\&quot;: \&quot;QA\&quot;,\n  \&quot;mobilePhone\&quot;: [\n    \&quot;34232\&quot;\n  ],\n  \&quot;additionalFields\&quot;: {}\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -79,7 +79,7 @@
       <name>customer_partner</name>
    </variables>
    <variables>
-      <defaultValue>'v1/contacts/partners/6716246dcaad3c0e0200bc03'</defaultValue>
+      <defaultValue>'v1/contacts/partners/67162d918b47d87fa3e726b6'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

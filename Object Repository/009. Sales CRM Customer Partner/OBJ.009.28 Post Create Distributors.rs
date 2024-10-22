@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.006.07 Put Update Setting Approval QRF</name>
+   <name>OBJ.009.28 Post Create Distributors</name>
    <tag></tag>
-   <elementGuidId>9f54f7bc-e064-48e5-8821-f0f9c5687ac7</elementGuidId>
+   <elementGuidId>c8a17c41-2fed-4428-91d3-8427ea3dcfbe</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,25 +21,50 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;level\&quot; : 1,\n    \&quot;type\&quot; : \&quot;and\&quot;,\n    \&quot;users\&quot; : [\&quot;6707c9c1d4f80878e8569fbd\&quot;],\n    \&quot;qrfMargin\&quot;: 2,\n    \&quot;skipLowerLevels\&quot; : true\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;name&quot;,
+      &quot;value&quot;: &quot;Alex Mahone&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;isInternal&quot;,
+      &quot;value&quot;: &quot;true&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;address&quot;,
+      &quot;value&quot;: &quot;Fox River Street&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;phone&quot;,
+      &quot;value&quot;: &quot;012345&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    }
+  ]
 }</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyType>form-data</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>f02040cb-b390-4101-85ce-19c5ed33bb47</webElementGuid>
+      <value>multipart/form-data</value>
+      <webElementGuid>2e359a02-4a0d-4b1b-bb50-e88826d0004d</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Accept</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>multipart/form-data</value>
       <webElementGuid>8f6ee84e-2b63-499c-ab2b-f9e4ea8cab75</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -48,14 +73,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>f335d01b-9bad-4ddd-a83a-725054773c06</webElementGuid>
+      <webElementGuid>f80c654f-36ba-40dd-bb2d-54441db92480</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://dev-sales-api-approval.asdf.id/v1/settings/approval/qrf</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${customer_partner}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -72,14 +97,14 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.sales_approval</defaultValue>
+      <defaultValue>GlobalVariable.customer_partner</defaultValue>
       <description></description>
       <id>e4dc6ce3-e78c-45c8-a926-d516bc90bf9e</id>
       <masked>false</masked>
-      <name>sales_approval</name>
+      <name>customer_partner</name>
    </variables>
    <variables>
-      <defaultValue>'v1/settings/approval/qrf'</defaultValue>
+      <defaultValue>'v1/distributors'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>
