@@ -54,4 +54,9 @@
       <initValue>'https://dev-sales-api-product.asdf.id/'</initValue>
       <name>crm_product</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-sales-api-sprf.asdf.id/'</initValue>
+      <name>sales_sprf</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

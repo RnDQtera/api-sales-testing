@@ -59,6 +59,11 @@ public class GlobalVariable {
      */
     public static Object crm_product
      
+    /**
+     * <p></p>
+     */
+    public static Object sales_sprf
+     
 
     static {
         try {
@@ -76,6 +81,7 @@ public class GlobalVariable {
             settings_role = selectedVariables['settings_role']
             customer_partner = selectedVariables['customer_partner']
             crm_product = selectedVariables['crm_product']
+            sales_sprf = selectedVariables['sales_sprf']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
