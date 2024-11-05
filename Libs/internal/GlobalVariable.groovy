@@ -64,6 +64,11 @@ public class GlobalVariable {
      */
     public static Object sales_sprf
      
+    /**
+     * <p></p>
+     */
+    public static Object jwt_refansa
+     
 
     static {
         try {
@@ -82,6 +87,7 @@ public class GlobalVariable {
             customer_partner = selectedVariables['customer_partner']
             crm_product = selectedVariables['crm_product']
             sales_sprf = selectedVariables['sales_sprf']
+            jwt_refansa = selectedVariables['jwt_refansa']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

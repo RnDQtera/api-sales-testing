@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.009.15 Post Create Partner</name>
+   <name>OBJ.012.16 Put SPRF Approval</name>
    <tag></tag>
-   <elementGuidId>2e1e8ad0-5590-4550-9431-2f6e96355ed2</elementGuidId>
+   <elementGuidId>1daa5e55-f510-4ca4-9ad2-6254f48d6238</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,43 +21,18 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;,
-  &quot;parameters&quot;: [
-    {
-      &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Del Piero&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    },
-    {
-      &quot;name&quot;: &quot;isInternal&quot;,
-      &quot;value&quot;: &quot;true&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    },
-    {
-      &quot;name&quot;: &quot;address&quot;,
-      &quot;value&quot;: &quot;Jl. Juventus&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    },
-    {
-      &quot;name&quot;: &quot;phone&quot;,
-      &quot;value&quot;: &quot;0928232&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    }
-  ]
+  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;:\&quot;6729d9d8c15de1472e35a081\&quot;,\n  \&quot;action\&quot;: \&quot;menyetujui\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
-   <httpBodyType>form-data</httpBodyType>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>multipart/form-data</value>
-      <webElementGuid>307d9881-6583-4121-adad-72426ec1c07c</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>f02040cb-b390-4101-85ce-19c5ed33bb47</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -73,14 +48,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>f80c654f-36ba-40dd-bb2d-54441db92480</webElementGuid>
+      <webElementGuid>f335d01b-9bad-4ddd-a83a-725054773c06</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${customer_partner}${endpoint}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sprf/sprf/approvals</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -97,14 +72,14 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.customer_partner</defaultValue>
+      <defaultValue>GlobalVariable.sales_sprf</defaultValue>
       <description></description>
       <id>e4dc6ce3-e78c-45c8-a926-d516bc90bf9e</id>
       <masked>false</masked>
-      <name>customer_partner</name>
+      <name>sales_sprf</name>
    </variables>
    <variables>
-      <defaultValue>'v1/partners'</defaultValue>
+      <defaultValue>'v1/sprf/approved-without-quotation'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

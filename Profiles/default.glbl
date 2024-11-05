@@ -59,4 +59,9 @@
       <initValue>'https://dev-sales-api-sprf.asdf.id/'</initValue>
       <name>sales_sprf</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTBiYTI2Njk2NGQzZGQyYjczMjc5MyIsInBlcnNvbklkIjoiNjcxMGJlNDFjNWE1YTA0NDZhMmMyZWQ1IiwiZW1wbG95ZWVJZCI6IjY3MTBiZTQxYzVhNWEwNDQ2YTJjMmVkOSIsInNlc3Npb25JZCI6IjY3Mjg0ZTg5YmQ4NTY4ODNmMDY5ZjRhNiIsImlhdCI6MTczMDc5NjQ1NX0.BGGXjq93kvCgn5oz44NVtpFHGDTHlJJ4XAaNDRKF9R4'</initValue>
+      <name>jwt_refansa</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

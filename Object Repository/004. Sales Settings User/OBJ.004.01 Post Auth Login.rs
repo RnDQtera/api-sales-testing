@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;jwt\&quot;: \&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MGM3YzYwOWRkNGU3NzE2MzM5YzY3NiIsInBlcnNvbklkIjoiNjcwYzdjOThlNmZjYzY3MGY4YzhjYzNhIiwiZW1wbG95ZWVJZCI6IjY3MGM3Yzk4ZTZmY2M2NzBmOGM4Y2MzZCIsInNlc3Npb25JZCI6IjY3MGM3ZTdhNzg2NDBjNDdlNzdiMGMxZiIsImlhdCI6MTcyODg3NTM0NX0.c6ucNVNKXQ2ygrZWbLwIuQY25NflwRWGCUTZGqr0DVw\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;refansa@mailnesia.com\&quot;,\n  \&quot;password\&quot;: \&quot;Refan123\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -55,7 +55,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${settings_user}${endpoint}</restUrl>
+   <restUrl>https://dev-sales-api-user-and-auth.asdf.id/v1/auth/login</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

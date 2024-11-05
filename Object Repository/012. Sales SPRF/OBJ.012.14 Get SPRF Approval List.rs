@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.009.15 Post Create Partner</name>
+   <name>OBJ.012.14 Get SPRF Approval List</name>
    <tag></tag>
-   <elementGuidId>2e1e8ad0-5590-4550-9431-2f6e96355ed2</elementGuidId>
+   <elementGuidId>4949e980-2e82-4a3b-9fbb-63c35fbc66c8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,43 +21,18 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;,
-  &quot;parameters&quot;: [
-    {
-      &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Del Piero&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    },
-    {
-      &quot;name&quot;: &quot;isInternal&quot;,
-      &quot;value&quot;: &quot;true&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    },
-    {
-      &quot;name&quot;: &quot;address&quot;,
-      &quot;value&quot;: &quot;Jl. Juventus&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    },
-    {
-      &quot;name&quot;: &quot;phone&quot;,
-      &quot;value&quot;: &quot;0928232&quot;,
-      &quot;type&quot;: &quot;Text&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
-    }
-  ]
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
-   <httpBodyType>form-data</httpBodyType>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>multipart/form-data</value>
-      <webElementGuid>307d9881-6583-4121-adad-72426ec1c07c</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>f02040cb-b390-4101-85ce-19c5ed33bb47</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -73,14 +48,14 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${token}</value>
-      <webElementGuid>f80c654f-36ba-40dd-bb2d-54441db92480</webElementGuid>
+      <webElementGuid>aa1138b0-1778-44c9-b818-5bcef6827746</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${customer_partner}${endpoint}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sprf/sprf/approvals?status=[&quot;menunggu approval&quot;]</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -90,21 +65,21 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.token</defaultValue>
+      <defaultValue>GlobalVariable.jwt_refansa</defaultValue>
       <description></description>
       <id>4af89381-9ee1-49d3-97bb-e796d4610c49</id>
       <masked>false</masked>
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.customer_partner</defaultValue>
+      <defaultValue>GlobalVariable.sales_sprf</defaultValue>
       <description></description>
       <id>e4dc6ce3-e78c-45c8-a926-d516bc90bf9e</id>
       <masked>false</masked>
-      <name>customer_partner</name>
+      <name>sales_sprf</name>
    </variables>
    <variables>
-      <defaultValue>'v1/partners'</defaultValue>
+      <defaultValue>'v1/sprf/approved-without-quotation'</defaultValue>
       <description></description>
       <id>eb9dd16c-a05f-471e-8020-5202ebbb0a22</id>
       <masked>false</masked>

@@ -55,7 +55,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${sales_sprf}${endpoint}</restUrl>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sprf/sprf/6721b4978be8755771f71363</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

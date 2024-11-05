@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;pipelineId\&quot;: \&quot;67210250ffe74e4df7156e5c\&quot;,\n    \&quot;partnerId\&quot;: \&quot;6721aa80fddb8e69adf03d6b\&quot;,\n    \&quot;futureRevPotential\&quot;: \&quot;Heyo\&quot;,\n    \&quot;personInChargeIds\&quot;: [\&quot;6721aacdfddb8e69adf03d6f\&quot;],\n    \&quot;budgetSales\&quot;: 1000,\n    \&quot;justification\&quot;: \&quot;none\&quot;,\n    \&quot;products\&quot;: [\n        {\n            \&quot;id\&quot;: \&quot;671c8cfb4de3562d48cd78e1\&quot;,\n            \&quot;requestPrice\&quot;: 500,\n            \&quot;requestDiscount\&quot;: 30,\n            \&quot;freeQuantity\&quot;: 2,\n            \&quot;priceWithFreeUnit\&quot;: 10,\n            \&quot;discountWithFreeUnit\&quot;: 10\n        }\n    ],\n    \&quot;termOfPayment\&quot;: \&quot;Kontan sebelum DO Barang\&quot;,\n    \&quot;paymentStages\&quot;: [\n        {\n            \&quot;percentage\&quot;: 5,\n            \&quot;name\&quot;: \&quot;Dapo\&quot;,\n            \&quot;purchaseDate\&quot;: 10,     \n            \&quot;purchasePrice\&quot;: 5          \n        }\n    ],\n    \&quot;marginTotal\&quot;: 20\n}\n&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;pipelineId\&quot;: \&quot;6722f5134ace66390c3e355e\&quot;,\n    \&quot;partnerId\&quot;: \&quot;6729c730374991498f93e4e4\&quot;,\n    \&quot;futureRevPotential\&quot;: \&quot;Roro\&quot;,\n    \&quot;personInChargeIds\&quot;: [\&quot;6729c753374991498f93e4e8\&quot;],\n    \&quot;budgetSales\&quot;: 2000,\n    \&quot;justification\&quot;: \&quot;none\&quot;,\n    \&quot;products\&quot;: [\n        {\n            \&quot;id\&quot;: \&quot;6722ec629acc0813c38ef1a1\&quot;,\n            \&quot;requestPrice\&quot;: 500,\n            \&quot;requestDiscount\&quot;: 20,\n            \&quot;freeQuantity\&quot;: 2,\n            \&quot;priceWithFreeUnit\&quot;: 10,\n            \&quot;discountWithFreeUnit\&quot;: 10\n        }\n    ],\n    \&quot;termOfPayment\&quot;: \&quot;Kontan sebelum DO Barang\&quot;,\n    \&quot;paymentStages\&quot;: [\n        {\n            \&quot;percentage\&quot;: 5,\n            \&quot;name\&quot;: \&quot;Olise\&quot;,\n            \&quot;purchaseDate\&quot;: 19812,\n            \&quot;purchasePrice\&quot;: 1000\n        }\n    ],\n    \&quot;marginTotal\&quot;: 3\n}\n&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -55,7 +55,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${sales_sprf}${endpoint}</restUrl>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sprf/sprf</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
