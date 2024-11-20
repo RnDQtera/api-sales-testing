@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDhkNjk3NTk2ZTQxZjZlNTg1MTUwZiIsInBlcnNvbklkIjoiNjcwOGQ2Yjc1MWEzNDFmNzU0YzQ0NmYwIiwiZXhtcGxveWVlSWQiOiI2NzA4ZDZiNzUxYTM0MWY3NTRjNDQ2ZjMiLCJzZXNzaW9uSWQiOiI2NzA4ZDcxNzQ4MjcxMDFlODMwNzhkNmUiLCJpYXQiOjI3Mjg2MzM3NzJ9.Krqs25GgJPG4AmFGpfxfSf7d5viLlfpI0d2o0GOAx38'</initValue>
+      <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDhkNjk3NTk2ZTQxZjZlNTg1MTUwZiIsInBlcnNvbklkIjoiNjcwOGQ2Yjc1MWEzNDFmNzU0YzQ0NmYwIiwiZW1wbG95ZWVJZCI6IjY3MDhkNmI3NTFhMzQxZjc1NGM0NDZmMyIsInNlc3Npb25JZCI6IjY3MDhkNzE3NDgyNzEwMWU4MzA3OGQ2ZSIsImlhdCI6MjcyODYzMzc3Mn0.g1iJUCJq0jKNZBJh2OGutjYbznfKkjGW69ShVqnLKYE'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -63,5 +63,15 @@
       <description></description>
       <initValue>'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTBiYTI2Njk2NGQzZGQyYjczMjc5MyIsInBlcnNvbklkIjoiNjcxMGJlNDFjNWE1YTA0NDZhMmMyZWQ1IiwiZW1wbG95ZWVJZCI6IjY3MTBiZTQxYzVhNWEwNDQ2YTJjMmVkOSIsInNlc3Npb25JZCI6IjY3Mjg0ZTg5YmQ4NTY4ODNmMDY5ZjRhNiIsImlhdCI6MTczMDc5NjQ1NX0.BGGXjq93kvCgn5oz44NVtpFHGDTHlJJ4XAaNDRKF9R4'</initValue>
       <name>jwt_refansa</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-sales-api-pipeline.asdf.id/'</initValue>
+      <name>pipeline</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-sales.asdf.id/v1/sales/'</initValue>
+      <name>sales_end_user_data</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
