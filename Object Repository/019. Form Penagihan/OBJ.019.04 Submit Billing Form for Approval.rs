@@ -26,27 +26,27 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;PONumber&quot;,
-      &quot;value&quot;: &quot;asd&quot;,
+      &quot;value&quot;: &quot;2&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;multipart/form-data&quot;
     },
     {
       &quot;name&quot;: &quot;PODate&quot;,
-      &quot;value&quot;: &quot;0123-01-01T00:00:00.000Z&quot;,
+      &quot;value&quot;: &quot;10&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;multipart/form-data&quot;
     },
     {
-      &quot;name&quot;: &quot;asd&quot;,
-      &quot;value&quot;: &quot;/Users/daffattrmdzi/Downloads/JURNAL 4.pdf&quot;,
+      &quot;name&quot;: &quot;POAttachment&quot;,
+      &quot;value&quot;: &quot;/Users/daffattrmdzi/Downloads/Fixed Asset Basic Information Report.pdf&quot;,
       &quot;type&quot;: &quot;File&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+      &quot;contentType&quot;: &quot;application/pdf&quot;
     },
     {
-      &quot;name&quot;: &quot;asd&quot;,
-      &quot;value&quot;: &quot;/Users/daffattrmdzi/Downloads/Regresi Linear Sederhana dalam Pemrograman R.pdf&quot;,
+      &quot;name&quot;: &quot;NPWP&quot;,
+      &quot;value&quot;: &quot;/Users/daffattrmdzi/Downloads/Fixed Asset Basic Information Report.pdf&quot;,
       &quot;type&quot;: &quot;File&quot;,
-      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+      &quot;contentType&quot;: &quot;application/pdf&quot;
     }
   ]
 }</httpBodyContent>
@@ -80,7 +80,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://dev-api-sales.asdf.id/v1/sales/billing-forms/673576c32a65a21bb2dd86da</restUrl>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sales/billing-forms/673ecfe7bfec815d9c92a59d</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

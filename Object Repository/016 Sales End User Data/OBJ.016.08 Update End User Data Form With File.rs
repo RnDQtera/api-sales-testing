@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.015.08 Update Pipeline Status</name>
+   <name>OBJ.016.08 Update End User Data Form With File</name>
    <tag></tag>
-   <elementGuidId>0cb3aae0-a9d0-4463-a550-f654a023cea4</elementGuidId>
+   <elementGuidId>b966cbac-4d3e-41b0-a8fe-28dbf49b2b9d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,17 +21,30 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;newStatus\&quot;: \&quot;pipeline\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;/Users/daffattrmdzi/Downloads/Existing-Purchased-License-211124.xls&quot;,
+      &quot;type&quot;: &quot;File&quot;,
+      &quot;contentType&quot;: &quot;multipart/encrypted&quot;
+    },
+    {
+      &quot;name&quot;: &quot;note&quot;,
+      &quot;value&quot;: &quot;nicee&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/signed&quot;
+    }
+  ]
 }</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyType>form-data</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>multipart/form-data</value>
       <webElementGuid>f02040cb-b390-4101-85ce-19c5ed33bb47</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -54,8 +67,8 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${pipeline}${endpoint}</restUrl>
+   <restRequestMethod>PATCH</restRequestMethod>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sales/end-user-data-form/with-file/67318260144dfaf2c26388c4/671c8cfb4de3562d48cd78e1/edit</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -72,18 +85,18 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/status'</defaultValue>
+      <defaultValue>'/v1/sales/end-user-data-form/'</defaultValue>
       <description></description>
       <id>03d20122-a8d1-493d-966b-96fb4bf1a755</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.pipeline</defaultValue>
+      <defaultValue>GlobalVariable.sales_end_user_data</defaultValue>
       <description></description>
       <id>e30a5c32-ed04-4be5-9ef0-de8f6fb8aff1</id>
       <masked>false</masked>
-      <name>pipeline</name>
+      <name>sales_end_user_data</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.015.08 Update Pipeline Status</name>
+   <name>OBJ.015.09 Update Next Action Pipeline</name>
    <tag></tag>
-   <elementGuidId>0cb3aae0-a9d0-4463-a550-f654a023cea4</elementGuidId>
+   <elementGuidId>3558e102-63ef-46e0-80c5-713be0def9d8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;newStatus\&quot;: \&quot;pipeline\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;nextAction\&quot;: [\n    \&quot;Presentasi\&quot;,\n    \&quot;Negosiasi\&quot;\n  ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -72,7 +72,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/status'</defaultValue>
+      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/next-action'</defaultValue>
       <description></description>
       <id>03d20122-a8d1-493d-966b-96fb4bf1a755</id>
       <masked>false</masked>

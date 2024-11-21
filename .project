@@ -31,26 +31,6 @@
 			<type>1</type>
 			<location>/var/folders/l2/rw8ylmqd4r3ccvqnhczn492w0000gn/T/Katalon/Web Services/kat-16860714850298408650.groovy</location>
 		</link>
-		<link>
-			<name>kat-2900080366060246675.groovy</name>
-			<type>1</type>
-			<location>/var/folders/l2/rw8ylmqd4r3ccvqnhczn492w0000gn/T/Katalon/Web Services/kat-2900080366060246675.groovy</location>
-		</link>
-		<link>
-			<name>kat-5335260811554278091.groovy</name>
-			<type>1</type>
-			<location>/var/folders/l2/rw8ylmqd4r3ccvqnhczn492w0000gn/T/Katalon/Web Services/kat-5335260811554278091.groovy</location>
-		</link>
-		<link>
-			<name>kat-6597310932881036907.groovy</name>
-			<type>1</type>
-			<location>/var/folders/l2/rw8ylmqd4r3ccvqnhczn492w0000gn/T/Katalon/Web Services/kat-6597310932881036907.groovy</location>
-		</link>
-		<link>
-			<name>kat-9400015364325077746.groovy</name>
-			<type>1</type>
-			<location>/var/folders/l2/rw8ylmqd4r3ccvqnhczn492w0000gn/T/Katalon/Web Services/kat-9400015364325077746.groovy</location>
-		</link>
 	</linkedResources>
 	<filteredResources>
 		<filter>
@@ -424,6 +404,24 @@
 		</filter>
 		<filter>
 			<id>1732163080703</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1732169453973</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1732169453982</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

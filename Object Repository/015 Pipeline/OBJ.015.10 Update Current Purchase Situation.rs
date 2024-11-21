@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.015.08 Update Pipeline Status</name>
+   <name>OBJ.015.10 Update Current Purchase Situation</name>
    <tag></tag>
-   <elementGuidId>0cb3aae0-a9d0-4463-a550-f654a023cea4</elementGuidId>
+   <elementGuidId>ffd805ba-4de9-4e05-a146-fac511644fec</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;newStatus\&quot;: \&quot;pipeline\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;currentPurchaseSituation\&quot;: \&quot;Yoi\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -72,7 +72,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/status'</defaultValue>
+      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/current-purchase-situation'</defaultValue>
       <description></description>
       <id>03d20122-a8d1-493d-966b-96fb4bf1a755</id>
       <masked>false</masked>

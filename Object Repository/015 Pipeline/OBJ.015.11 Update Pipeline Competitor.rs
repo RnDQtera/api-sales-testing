@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.015.08 Update Pipeline Status</name>
+   <name>OBJ.015.11 Update Pipeline Competitor</name>
    <tag></tag>
-   <elementGuidId>0cb3aae0-a9d0-4463-a550-f654a023cea4</elementGuidId>
+   <elementGuidId>05f4ef9e-e2e6-4299-a7b4-7aefa014988a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;newStatus\&quot;: \&quot;pipeline\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;competitor\&quot;: \&quot;FBI\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -72,7 +72,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/status'</defaultValue>
+      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/competitor'</defaultValue>
       <description></description>
       <id>03d20122-a8d1-493d-966b-96fb4bf1a755</id>
       <masked>false</masked>

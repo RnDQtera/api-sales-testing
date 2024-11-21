@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.015.08 Update Pipeline Status</name>
+   <name>OBJ.015.01 Create Pipeline</name>
    <tag></tag>
-   <elementGuidId>0cb3aae0-a9d0-4463-a550-f654a023cea4</elementGuidId>
+   <elementGuidId>15b8456d-eef4-4381-a9f3-eb2f79d1b55c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;newStatus\&quot;: \&quot;pipeline\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;partnerId\&quot;: \&quot;673ef1dbcbd6427d57de786f\&quot;,\n  \&quot;customerId\&quot;: \&quot;6722f48f9acc0813c38ef1fb\&quot;,\n  \&quot;contactIds\&quot;: [\n    \&quot;6722f4dc9acc0813c38ef202\&quot;\n  ],\n  \&quot;estimatedClose\&quot;: \&quot;2024-12-31T00:00:00.000Z\&quot;,\n  \&quot;competitor\&quot;: \&quot;The Upstairs\&quot;,\n  \&quot;currentPurchaseSituation\&quot;: \&quot;Client is considering alternatives\&quot;,\n  \&quot;products\&quot;: [\n    {\n      \&quot;productId\&quot;: \&quot;671c8cfb4de3562d48cd78e1\&quot;,\n      \&quot;isElsa\&quot;: true,\n      \&quot;clientId\&quot;: \&quot;12345\&quot;,\n      \&quot;quantity\&quot;: 5,\n      \&quot;purchaseType\&quot;: \&quot;New\&quot;,\n      \&quot;duration\&quot;: 10,\n      \&quot;timeUnit\&quot;: \&quot;Tahun\&quot;\n    }\n  ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -54,7 +54,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
+   <restRequestMethod>POST</restRequestMethod>
    <restUrl>${pipeline}${endpoint}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -72,7 +72,7 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/status'</defaultValue>
+      <defaultValue>'/pipeline'</defaultValue>
       <description></description>
       <id>03d20122-a8d1-493d-966b-96fb4bf1a755</id>
       <masked>false</masked>

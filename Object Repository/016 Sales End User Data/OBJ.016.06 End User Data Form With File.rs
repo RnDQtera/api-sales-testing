@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.015.08 Update Pipeline Status</name>
+   <name>OBJ.016.06 End User Data Form With File</name>
    <tag></tag>
-   <elementGuidId>0cb3aae0-a9d0-4463-a550-f654a023cea4</elementGuidId>
+   <elementGuidId>571d037a-5952-4444-bf48-7dd83690424b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,17 +21,36 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;newStatus\&quot;: \&quot;pipeline\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
+  &quot;contentType&quot;: &quot;multipart/form-data&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;pipelineId&quot;,
+      &quot;value&quot;: &quot;673c33072e743b7d11b8c7a6&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;productId&quot;,
+      &quot;value&quot;: &quot;6721bfeba8a17fbc05abe894&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    },
+    {
+      &quot;name&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;/Users/daffattrmdzi/Downloads/file_example_XLS_10.xls&quot;,
+      &quot;type&quot;: &quot;File&quot;,
+      &quot;contentType&quot;: &quot;multipart/form-data&quot;
+    }
+  ]
 }</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyType>form-data</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>multipart/form-data</value>
       <webElementGuid>f02040cb-b390-4101-85ce-19c5ed33bb47</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -39,7 +58,7 @@
       <matchCondition>equals</matchCondition>
       <name>Accept</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>multipart/form-data</value>
       <webElementGuid>8f6ee84e-2b63-499c-ab2b-f9e4ea8cab75</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -54,8 +73,8 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
-   <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${pipeline}${endpoint}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sales/end-user-data-form/with-file</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -72,18 +91,18 @@
       <name>token</name>
    </variables>
    <variables>
-      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/status'</defaultValue>
+      <defaultValue>'/v1/sales/end-user-data-form/'</defaultValue>
       <description></description>
       <id>03d20122-a8d1-493d-966b-96fb4bf1a755</id>
       <masked>false</masked>
       <name>endpoint</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.pipeline</defaultValue>
+      <defaultValue>GlobalVariable.sales_end_user_data</defaultValue>
       <description></description>
       <id>e30a5c32-ed04-4be5-9ef0-de8f6fb8aff1</id>
       <masked>false</masked>
-      <name>pipeline</name>
+      <name>sales_end_user_data</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

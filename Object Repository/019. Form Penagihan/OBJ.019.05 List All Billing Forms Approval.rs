@@ -51,7 +51,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://dev-api-sales.asdf.id/v1/sales/billing-form-approvals?status=menunggu approval</restUrl>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sales/billing-form-approvals</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

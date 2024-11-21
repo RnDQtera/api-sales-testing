@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>OBJ.015.08 Update Pipeline Status</name>
+   <name>OBJ.20.11 Handle Trial License Action</name>
    <tag></tag>
-   <elementGuidId>0cb3aae0-a9d0-4463-a550-f654a023cea4</elementGuidId>
+   <elementGuidId>feb443e3-b2ac-4bd5-ac90-e087a470a5d1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -21,7 +21,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;newStatus\&quot;: \&quot;pipeline\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\&quot;action\&quot;: \&quot;menyetujui\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -55,7 +55,7 @@
    <migratedVersion>5.4.1</migratedVersion>
    <path></path>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${pipeline}${endpoint}</restUrl>
+   <restUrl>https://dev-api-sales.asdf.id/v1/sales/trial-license-approvals/673dae26ee15d799a57355bf</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -67,23 +67,9 @@
    <variables>
       <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
-      <id>4af89381-9ee1-49d3-97bb-e796d4610c49</id>
+      <id>b58af81a-1907-4450-981b-d9d87912d238</id>
       <masked>false</masked>
       <name>token</name>
-   </variables>
-   <variables>
-      <defaultValue>'/pipeline/update/673ef7a15856fa8d7937454a/status'</defaultValue>
-      <description></description>
-      <id>03d20122-a8d1-493d-966b-96fb4bf1a755</id>
-      <masked>false</masked>
-      <name>endpoint</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.pipeline</defaultValue>
-      <description></description>
-      <id>e30a5c32-ed04-4be5-9ef0-de8f6fb8aff1</id>
-      <masked>false</masked>
-      <name>pipeline</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
